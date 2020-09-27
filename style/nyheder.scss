@@ -1,0 +1,53 @@
+@import "style.scss";
+
+#main{
+padding-top: 45px;
+padding-bottom: 45px;
+    #container{
+    max-width: $max;
+    width: 90vw;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+        #news{
+        background-color: $white;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        box-shadow: $dropshadow;
+
+            img{
+            width: 100%;
+            object-fit: cover;
+            margin-top: 0;
+            }
+
+            h3{
+            margin-top: 30px;
+            margin-bottom: 15px;
+            }
+
+            p{
+            margin: 10px;
+            margin-left: 0;
+            }
+
+            .news_title{
+            text-transform: uppercase;
+            }
+
+            .news_time{
+            margin-bottom: 30px;
+            font-size: .8em;
+            font-weight: 200;
+            }
+
+            .news_title, .news_desc, .news_time{
+            margin-left: 20px;
+            margin-right: 20px;
+            }
+        }
+    }
+}

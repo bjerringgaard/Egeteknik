@@ -1,0 +1,123 @@
+@import "style.scss";
+
+
+#contact{
+padding-top: 90px;
+padding-bottom: 90px;
+background-color: $light;
+
+	#contact-grid{
+	max-width: $max;
+	width: 90vw;
+	display: grid;
+	height: fit-content;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto; 
+	margin: 0px auto;
+	grid-gap: 40px;
+	
+
+		.contact-container1, .contact-container2, .contact-container3 {
+		background-color: $white;
+		min-height: 450px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+
+		box-sizing: border-box;
+		box-shadow: 5px 19px 40px 0 rgba(5,10,64,.07);
+		padding: 40px;
+	
+			h2{
+			margin: 0;
+			margin-bottom: 15px;
+			}
+
+			p{
+			margin: 0;
+			margin-bottom: 50px;
+			}
+
+			i{
+			color: $ege;
+			font-size: 80px;
+			margin-bottom: 30px;
+			}
+
+			a{
+			width: 100%;
+			text-decoration: none;
+			padding: 15px 0px;
+			color: $ege;
+			border: 1px solid $ege;
+			transition: all .2s ease-in-out;
+
+				&:hover{
+				transform: scale(1.05);
+				}
+				}
+		}
+	}
+}
+
+#info{
+margin: 70px auto 70px auto;
+height: fit-content;
+max-width: $max;
+width: 90vw;
+
+	p{
+	color: $dark;
+	}
+
+	li{
+	color: $dark;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+#contact{
+	#contacttitle{
+		margin-left: 20px;
+		margin-right: 20px;
+		h1{
+		font-size: 3em;
+		}
+
+		h2{
+		font-size: 1.5em;
+		}
+	}
+
+	#contact-grid{
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	margin: 0 auto;
+
+		.contact-container1, .contact-container2, .contact-container3 {
+		padding-bottom: 20px;
+		}
+	}
+}
+
+#info {
+margin: 60px auto;
+}
+}
+
+@media screen and (max-width: 900px) {
+#contact{
+	#contact-grid{
+	grid-template-columns: 1fr;
+	grid-gap: 40px;
+	margin: 0 auto;
+	}
+}
+}

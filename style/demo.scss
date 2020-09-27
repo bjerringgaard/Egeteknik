@@ -1,0 +1,108 @@
+@import "style.scss";
+
+#bestildemo {
+width: 100%;
+
+    #container{
+    height: fit-content;
+    grid-gap: 50px;
+
+    width: 90vw;
+    max-width: $max;
+    margin: 0 auto;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+        form{
+        width: 60%;
+
+            input, select{
+            width: 100%;
+            height: 60px;
+
+            margin: 0;
+            padding: 10px;
+
+            margin-bottom: 20px;
+
+            outline: none;
+            border: none;
+            background-color: $bggrey;
+
+            font-size: 1.4em;
+            box-sizing: border-box;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                transform: scale(0.99);
+                }
+
+            &:focus {
+                transform: scale(0.99);
+                }
+            }
+
+            select{
+            cursor: pointer;
+            }
+
+            #submitBtn{
+            display: flex;
+            width: 100%;
+
+                input[id=submit]{
+                    margin-right: 20px;
+                    background-color: $ege;
+
+                    &:hover{
+                        background-color: #00ADBA;
+                        }
+                }
+
+                input[id=submitOnline]{
+                    background-color: $grey;
+                    width: 70%;
+
+                    &:hover{
+                        background-color: #636264;
+                    }
+                }
+    
+                input[type=submit]{
+                cursor: pointer;
+                border: none;
+                color: $white;
+                text-transform: uppercase;
+                font-size: 1.4em;
+                transition: all .2s ease-in-out;
+    
+                    &:hover{
+                    transform: scale(0.99);
+                    }
+                }
+            }
+
+            label{
+            font-size: 1.4em;
+            margin: 0;
+            color: $dark;
+            text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #bestildemo{
+        #container{
+            form{
+            width: 90vw;
+            }
+        }
+    }  
+}

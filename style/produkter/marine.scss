@@ -1,0 +1,122 @@
+@import "../themes/marine.scss";
+
+h2{
+margin: 0;
+margin-bottom: 30px;
+}
+
+p{
+margin: 0;
+margin-bottom: 15px;
+}
+
+a{
+text-decoration: none;
+color: $ege;
+font-weight: 500;
+font-size: 1.2em;
+}
+
+#main{
+.grid:nth-child(odd){
+    background: $white;
+
+        .photo { 
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        }
+    }
+    .grid:nth-child(even){
+        .photo { 
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        }
+    }
+
+    .grid{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    grid-auto-rows: 1fr;
+    
+        .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        height: fit-content;
+    
+        width: 90vw;
+        max-width: $max;
+        margin: 0 auto;
+        //align-content: center;
+        //align-items: center;
+        }
+    
+        .photo { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+            img{
+            height: 300px;
+            width: auto;
+            object-fit: cover;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+#main{
+    .grid:nth-child(odd){
+        background: $white;
+    
+            .photo { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+        }
+        .grid:nth-child(even){
+            .photo { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+        }
+
+    .grid{
+        .wrapper{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+
+        justify-content: center;
+
+        width: 90vw;
+        max-width: $max;
+        margin: 0 auto;
+        }
+        .text{
+        grid-column: 1 / 2;
+        grid-row: 1;
+        }
+
+        .photo { 
+        grid-column: 1 / 2;
+        grid-row: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+
+            img{
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+            }
+        }
+    }
+}
+}
