@@ -19,6 +19,13 @@ h2 {
   word-wrap: break-word;
 }
 
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  word-wrap: break-word;
+}
+
 p {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
